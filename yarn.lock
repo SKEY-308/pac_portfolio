@@ -878,6 +878,11 @@
   dependencies:
     "delayed-stream" "~1.0.0"
 
+"compute-scroll-into-view@^1.0.17":
+  "integrity" "sha512-j4dx+Fb0URmzbwwMUrhqWM2BEWHdFGx+qZ9qqASHRPqvTYdqvWnHg0H1hIbcyLnvgnoNAVMlwkepyqM3DaIFUg=="
+  "resolved" "https://registry.npmjs.org/compute-scroll-into-view/-/compute-scroll-into-view-1.0.17.tgz"
+  "version" "1.0.17"
+
 "concat-map@0.0.1":
   "integrity" "sha512-/Srv4dswyQNBfohGpz9o6Yb3Gz3SrUDqBH5rTuhGR7ahtlbYKnVxw2bCFMRljaA7EXHaXZ8wsHdodFvbkhKmqg=="
   "resolved" "https://registry.npmjs.org/concat-map/-/concat-map-0.0.1.tgz"
@@ -2283,6 +2288,11 @@
   "resolved" "https://registry.npmjs.org/lodash.merge/-/lodash.merge-4.6.2.tgz"
   "version" "4.6.2"
 
+"lodash.throttle@^4.1.1":
+  "integrity" "sha512-wIkUCfVKpVsWo3JSZlc+8MB5it+2AN5W8J7YVMST30UrvcQNZ1Okbj+rbVniijTWE6FGYy4XJq/rHkas8qJMLQ=="
+  "resolved" "https://registry.npmjs.org/lodash.throttle/-/lodash.throttle-4.1.1.tgz"
+  "version" "4.1.1"
+
 "lodash@^4.17.11", "lodash@^4.17.15", "lodash@^4.17.21":
   "integrity" "sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg=="
   "resolved" "https://registry.npmjs.org/lodash/-/lodash-4.17.21.tgz"
@@ -2937,13 +2947,20 @@
   "resolved" "https://registry.npmjs.org/quick-lru/-/quick-lru-4.0.1.tgz"
   "version" "4.0.1"
 
-"react-dom@^17.0.2 || ^18.0.0-0", "react-dom@^18.0.0", "react-dom@>=16.0.0", "react-dom@18.2.0":
+"react-dom@^15.5.4 || ^16.0.0 || ^17.0.0 || ^18.0.0", "react-dom@^17.0.2 || ^18.0.0-0", "react-dom@^18.0.0", "react-dom@>=16.0.0", "react-dom@18.2.0":
   "integrity" "sha512-6IMTriUmvsjHUjNtEDudZfuDQUoWXVxKHhlEGSk81n4YFS+r/Kl99wXiwlVXtPBtJenozv2P+hxDsw9eA7Xo6g=="
   "resolved" "https://registry.npmjs.org/react-dom/-/react-dom-18.2.0.tgz"
   "version" "18.2.0"
   dependencies:
     "loose-envify" "^1.1.0"
     "scheduler" "^0.23.0"
+
+"react-horizontal-scrolling-menu@^3.2.0":
+  "integrity" "sha512-6kmUPdTDXJKYlhfS5K1tAop6P1LJTSL493cUZBKHjOWsnmg3/KLPI/7Pr3b/LpiNFCUjTAPRl2JOunagGzwOjQ=="
+  "resolved" "https://registry.npmjs.org/react-horizontal-scrolling-menu/-/react-horizontal-scrolling-menu-3.2.0.tgz"
+  "version" "3.2.0"
+  dependencies:
+    "smooth-scroll-into-view-if-needed" "^1.1.32"
 
 "react-icons@^4.4.0":
   "integrity" "sha512-fSbvHeVYo/B5/L4VhB7sBA1i2tS8MkT0Hb9t2H1AVPkwGfVHLJCqyr2Py9dKMxsyM63Eng1GkdZfbWj+Fmv8Rg=="
@@ -2965,6 +2982,14 @@
   "resolved" "https://registry.npmjs.org/react-is/-/react-is-18.2.0.tgz"
   "version" "18.2.0"
 
+"react-scroll@^1.8.7":
+  "integrity" "sha512-fBOIwweAlhicx8RqP9tQXn/Uhd+DTtVRjw+0VBsIn1Z+MjRYLhTZ0tMoTAU1vOD3dce8mI6copexI4yWII+Luw=="
+  "resolved" "https://registry.npmjs.org/react-scroll/-/react-scroll-1.8.7.tgz"
+  "version" "1.8.7"
+  dependencies:
+    "lodash.throttle" "^4.1.1"
+    "prop-types" "^15.7.2"
+
 "react-tooltip@^4.2.21":
   "integrity" "sha512-zSLprMymBDowknr0KVDiJ05IjZn9mQhhg4PRsqln0OZtURAJ1snt1xi5daZfagsh6vfsziZrc9pErPTDY1ACig=="
   "resolved" "https://registry.npmjs.org/react-tooltip/-/react-tooltip-4.2.21.tgz"
@@ -2973,7 +2998,7 @@
     "prop-types" "^15.7.2"
     "uuid" "^7.0.3"
 
-"react@*", "react@^16.8.0 || ^17.0.0 || ^18.0.0", "react@^17.0.2 || ^18.0.0-0", "react@^18.0.0", "react@^18.2.0", "react@>= 16.8.0 || 17.x.x || ^18.0.0-0", "react@>=16.0.0", "react@18.2.0":
+"react@*", "react@^15.5.4 || ^16.0.0 || ^17.0.0 || ^18.0.0", "react@^16.8.0 || ^17.0.0 || ^18.0.0", "react@^17.0.2 || ^18.0.0-0", "react@^18.0.0", "react@^18.2.0", "react@>= 16.8.0 || 17.x.x || ^18.0.0-0", "react@>=16.0.0", "react@>=16.8", "react@18.2.0":
   "integrity" "sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ=="
   "resolved" "https://registry.npmjs.org/react/-/react-18.2.0.tgz"
   "version" "18.2.0"
@@ -3186,6 +3211,13 @@
   dependencies:
     "loose-envify" "^1.1.0"
 
+"scroll-into-view-if-needed@^2.2.28":
+  "integrity" "sha512-hxpAR6AN+Gh53AdAimHM6C8oTN1ppwVZITihix+WqalywBeFcQ6LdQP5ABNl26nX8GTEL7VT+b8lKpdqq65wXg=="
+  "resolved" "https://registry.npmjs.org/scroll-into-view-if-needed/-/scroll-into-view-if-needed-2.2.29.tgz"
+  "version" "2.2.29"
+  dependencies:
+    "compute-scroll-into-view" "^1.0.17"
+
 "scss-tokenizer@^0.4.3":
   "integrity" "sha512-raKLgf1LI5QMQnG+RxHz6oK0sL3x3I4FN2UDLqgLOGO8hodECNnNh5BXn7fAyBxrA8zVzdQizQ6XjNJQ+uBwMw=="
   "resolved" "https://registry.npmjs.org/scss-tokenizer/-/scss-tokenizer-0.4.3.tgz"
@@ -3270,6 +3302,13 @@
   "integrity" "sha512-94hK0Hh8rPqQl2xXc3HsaBoOXKV20MToPkcXvwbISWLEs+64sBq5kFgn2kJDHb1Pry9yrP0dxrCI9RRci7RXKg=="
   "resolved" "https://registry.npmjs.org/smart-buffer/-/smart-buffer-4.2.0.tgz"
   "version" "4.2.0"
+
+"smooth-scroll-into-view-if-needed@^1.1.32":
+  "integrity" "sha512-crS8NfAaoPrtVYOCMSAnO2vHRgUp22NiiDgEQ7YiaAy5xe2jmR19Jm+QdL8+97gO8ENd7PUyQIAQojJyIiyRHw=="
+  "resolved" "https://registry.npmjs.org/smooth-scroll-into-view-if-needed/-/smooth-scroll-into-view-if-needed-1.1.33.tgz"
+  "version" "1.1.33"
+  dependencies:
+    "scroll-into-view-if-needed" "^2.2.28"
 
 "socks-proxy-agent@^6.0.0":
   "integrity" "sha512-a6KW9G+6B3nWZ1yB8G7pJwL3ggLy1uTzKAgCb7ttblwqdz9fMGJUuTy3uFzEP48FAs9FLILlmzDlE2JJhVQaXQ=="

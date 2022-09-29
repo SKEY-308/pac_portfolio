@@ -1,9 +1,10 @@
 import React, { useState } from 'react'
 import { HiMenuAlt4, HiX } from 'react-icons/hi';
 import { motion } from 'framer-motion';
-import Link from 'next/link';
+// import Link from 'next/link';
 // import images from './images';
 
+import { Link } from 'react-scroll'
 
 
 const NavBar = () => {
@@ -19,9 +20,19 @@ const NavBar = () => {
             </div>
             <ul className="app__navbar_links ">
                 { ['home', 'about', 'work', 'skills', 'contact'].map((item) => (
-                    <li className="app__flex p-text" key={ `link-${item}` }>
+                    <li className="app__flex p-text">
                         <div />
-                        <Link href={ `#${item}` }>{ item }</Link>
+                        <Link
+                            activeClass='active'
+                            to={ item }
+                            spy={ true }
+                            smooth={ true }
+                            offset={ -70 }
+                            duration={ 500 }
+                            key={ item }
+                        >
+                            { item }
+                        </Link>
                     </li>
                 )) }
             </ul>
