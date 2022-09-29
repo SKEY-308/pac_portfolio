@@ -6,6 +6,7 @@ import Link from 'next/link';
 import { urlFor, client } from '../lib/client';
 
 import AppWrap from './AppWrap';
+import MotionWrap from './MotionWrap';
 
 const Work = () => {
     const [works, setWorks] = useState([]);
@@ -42,9 +43,9 @@ const Work = () => {
             <h2 className="head-text">My Creative <span>Portfolio</span> Section</h2>
 
             <div className="app__work-filter">
-                { ['UI/UX', 'Web App', 'Mobile App', 'React JS', 'All'].map((item, index) => (
+                { ['UI/UX', 'Web App', 'Mobile App', 'React JS', 'All'].map((item, id) => (
                     <div
-                        key={ index }
+                        key={ id }
                         onClick={ () => handleWorkFilter(item) }
                         className={ `app__work-filter-item app__flex p-text ${activeFilter === item ? 'item-active' : ''}` }
                     >
@@ -58,8 +59,8 @@ const Work = () => {
                 transition={ { duration: 0.5, delayChildren: 0.5 } }
                 className="app__work-portfolio"
             >
-                { filterWork.map((work, index) => (
-                    <div className="app__work-item app__flex" key={ index }>
+                { filterWork.map((work) => (
+                    <div className="app__work-item app__flex" key={ work._id }>
                         <div
                             className="app__work-img app__flex"
                         >
@@ -112,4 +113,8 @@ const Work = () => {
     )
 }
 
-export default AppWrap(Work, 'work')
+export default AppWrap(
+    MotionWrap(Work, 'app__work'),
+    'work',
+    // 'app__primarybg'
+)

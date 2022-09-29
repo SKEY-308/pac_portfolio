@@ -14,26 +14,13 @@ const Home = () => {
 
             <Work />
 
-
             <Skills />
+
             <Testimonial />
 
         </div>
     )
 }
-
-// // This gets called on every request
-// export async function getStaticProps() {
-
-//     const query = "*[_type == \"abouts\"]";
-
-//     // Fetch data from external API
-//     const abouts = await client.fetch(query)
-
-
-//     // Pass data to the page via props 
-//     return { props: { abouts } }
-// };
 
 export default Home
 
