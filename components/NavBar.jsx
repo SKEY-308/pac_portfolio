@@ -20,9 +20,9 @@ const NavBar = () => {
             </div>
             <ul className="app__navbar_links ">
                 { ['home', 'about', 'work', 'skills', 'contact'].map((item) => (
-                    <li className="app__flex p-text" key={ item }>
+                    <li className="app__flex p-text" key={ item } >
                         <div />
-                        <Link href={ `#${item}` } >
+                        <Link href={ `#${item}` }>
                             { item }
                         </Link>
                     </li>
